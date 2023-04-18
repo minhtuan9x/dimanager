@@ -4,21 +4,55 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tuanit</groupId>
+    <groupId>com.github.minhtuan9x</groupId>
     <artifactId>dimanager</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    <packaging>jar</packaging>
+    <name>minhtuan9x</name>
+    <url>https://github.com/minhtuan9x/dimanager</url>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Do Minh Tuan</name>
+            <email>tuando99.it@gmail.com</email>
+            <organization>minhtuan9x</organization>
+            <organizationUrl>https://github.com/minhtuan9x</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/minhtuan9x/dimanager</connection>
+        <developerConnection>scm:git:ssh://github.com:minhtuan9x/dimanager.git</developerConnection>
+        <url>https://github.com/minhtuan9x/dimanager</url>
+    </scm>
 
     <dependencies>
         <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>31.0.1-jre</version>
+            <version>31.1-jre</version>
         </dependency>
     </dependencies>
 </project>
