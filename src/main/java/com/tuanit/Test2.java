@@ -1,5 +1,7 @@
 package com.tuanit;
 
+import com.tuanit.di.Component;
+
 @Component
 public class Test2 {
 

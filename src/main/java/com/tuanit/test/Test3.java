@@ -1,6 +1,6 @@
 package com.tuanit.test;
 
-import com.tuanit.Component;
+import com.tuanit.di.Component;
 
 @Component
 public class Test3 {

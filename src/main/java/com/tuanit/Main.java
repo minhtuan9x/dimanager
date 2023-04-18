@@ -1,5 +1,6 @@
 package com.tuanit;
 
+import com.tuanit.di.Context;
 import com.tuanit.test.Test1;
 
 public class Main {

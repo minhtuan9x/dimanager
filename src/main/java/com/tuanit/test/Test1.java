@@ -1,18 +1,22 @@
 package com.tuanit.test;
 
-import com.tuanit.Autowired;
-import com.tuanit.Component;
-import com.tuanit.Test2;
+import com.tuanit.*;
+import com.tuanit.di.Autowired;
+import com.tuanit.di.Component;
 
 @Component
 public class Test1 {
 
     @Autowired
-    public Test2 test2;
+    private Test2 test2;
     @Autowired
-    public Test3 test3;
+    private Test3 test3;
+    @Autowired
+    private Test4 test4;
+    @Autowired
+    private Test6 test6;
 
     public String test() {
-        return "test1" + test2.test()+test3.test();
+        return "test1" + test2.test() + test3.test() + test4.test() + test6.test();
     }
 }
