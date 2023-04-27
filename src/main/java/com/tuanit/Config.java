@@ -7,13 +7,10 @@ import com.tuanit.di.Configuration;
 @Configuration
 public class Config {
 
-    @Autowired
-    Test4 test4;
-
     @Bean
     public Test6 test6() {
         Test6 test6 = new Test6();
-        test6.t = "chicken" + test4.test();
+        test6.t = "chicken";
         return test6;
     }
 }
